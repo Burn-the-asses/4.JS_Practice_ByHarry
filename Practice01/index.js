@@ -189,6 +189,30 @@ let j = 0 ;
 //document objects manipulation
 // DOM Manipulation
 
+// let elem  = document.getElementById('click');
+// console.log(elem);
+
+// let elemClass  = document.getElementsByClassName('container');
+// console.log(elemClass);
+// // elemClass[0].style.background = "yellow";
+// elemClass[0].classList.add("bg-primary");
+// elemClass[0].classList.add("text-success");
+// // elemClass[0].classList.remove("text-success");
+// let inner = elemClass[0].innerHTML;
+// let innerText = elemClass[0].innerText;
+// console.log(innerText);
+
+tn = document.getElementsByTagName('button');
+tn1 = document.getElementsByTagName('div');
+console.log(tn);
+console.log(tn1);
+
+createdElement = document.createElement('p');
+createdElement.innerText = "This is a created paragraph.";
+tn1[0].appendChild(createdElement);
+createdElement2 = document.createElement('b');
+createdElement2.innerText = "This is a created bold.";
+tn1[0].replaceChild(createdElement2, createdElement);
 
 
 

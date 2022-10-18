@@ -271,7 +271,18 @@ summ = (a,b) => {
 //SetTimeout Schedule the things to happen in the future
 
 logKaro = () => {
-    document.querySelectorAll('.container')[1].innerHTML = "<b>Set Interval Fired.</b>"
+    document.querySelectorAll('.container')[1].innerHTML = "<b>Set Time Out Fired.</b>"
     console.log("I am your log. ")
 }
 setTimeout(logKaro, 2000); //2000 mili seconds
+
+
+//SetInterval used for things to happened in the repeatation
+// logKaros = () => {
+//     document.querySelectorAll('.container')[1].innerHTML = "<b>Set Interval Fired.</b>"
+//     console.log("I am your log. ")
+// }
+// //setInterval(logKaros,2000);
+// clr = setInterval(logKaros,2000);
+
+//We used clearInterval / clearTimeout to cancel the setInterval/setTimeout

@@ -202,17 +202,76 @@ let j = 0 ;
 // let innerText = elemClass[0].innerText;
 // console.log(innerText);
 
-tn = document.getElementsByTagName('button');
-tn1 = document.getElementsByTagName('div');
-console.log(tn);
-console.log(tn1);
+//DOM manipulation Methods and properties
+// tn = document.getElementsByTagName('button');
+// tn1 = document.getElementsByTagName('div');
+// console.log(tn);
+// console.log(tn1);
 
-createdElement = document.createElement('p');
-createdElement.innerText = "This is a created paragraph.";
-tn1[0].appendChild(createdElement);
-createdElement2 = document.createElement('b');
-createdElement2.innerText = "This is a created bold.";
-tn1[0].replaceChild(createdElement2, createdElement);
+// createdElement = document.createElement('p');
+// createdElement.innerText = "This is a created paragraph.";
+// tn1[0].appendChild(createdElement);
+// createdElement2 = document.createElement('b');
+// createdElement2.innerText = "This is a created bold.";
+// tn1[0].replaceChild(createdElement2, createdElement);
+
+// Selecting using query
+// sel = document.querySelector('.container')
+// console.log(sel);
+
+// sel = document.querySelectorAll('.container')
+// console.log(sel);
 
 
+//JS Events
+//Events in JS, Like click, hover, We Listen these events and do things, perform functions.
 
+// function clicked(){
+//     console.log("The button is clicked.");
+// }
+
+// window.onload = function(){
+//     console.log('The document was loaded');
+// }
+
+// firstContainer.addEventListener('click' , function(){
+//     document.querySelectorAll('.container')[1].innerHTML = "<b>We have Clicked</b>"
+//     console.log("click hua on conntainer");
+// })
+
+// firstContainer.addEventListener('mouseover' , function(){
+//     console.log("Mouse on container, mouseover event fired");
+// })
+
+// firstContainer.addEventListener('mouseout' , function(){
+//     console.log("Mouse out of container, mouseout event fired");
+// })
+
+// let prevHtml = document.querySelectorAll('.container')[1].innerHTML;
+// firstContainer.addEventListener('mouseup' , function(){
+//     document.querySelectorAll('.container')[1].innerHTML = prevHtml;
+//     console.log("Mouse up when clicked, mouseup event fired");
+// })
+// firstContainer.addEventListener('mousedown' , function(){ 
+//     document.querySelectorAll('.container')[1].innerHTML = "<b>We have Clicked</b>"
+//     console.log("Mouse down when clicked on Container");
+// })
+
+//Arrow functions
+
+// function sum(a,b){
+//     return a+b;
+// }
+
+summ = (a,b) => {
+    return a+b;
+}
+
+//setTimeout and setinterval
+//SetTimeout Schedule the things to happen in the future
+
+logKaro = () => {
+    document.querySelectorAll('.container')[1].innerHTML = "<b>Set Interval Fired.</b>"
+    console.log("I am your log. ")
+}
+setTimeout(logKaro, 2000); //2000 mili seconds

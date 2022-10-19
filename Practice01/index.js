@@ -52,7 +52,7 @@
 */
 
 //Array demostration
-var arr = [1,2,3,4,"strings",5];
+// var arr = [1,2,3,4,"strings",5];
 // console.log(arr[4]);
 
 //Operators in javascipt
@@ -81,16 +81,16 @@ var arr = [1,2,3,4,"strings",5];
 
 //JavaScript functions , Provide reuseability.
 //functions help us to implemennt Dry Principle , do not repeat yourself.
-function avg(a, b){
-    return (a+b)/2;
-}
-c1 = avg(6,4);
-c2 = avg(14,16);
+// function avg(a, b){
+//     return (a+b)/2;
+// }
+// c1 = avg(6,4);
+// c2 = avg(14,16);
 // console.log(c1, c2);
 
 
 //Conditional or conditional statements in JavaScript
-var age = 34;
+// var age = 34;
 // if (age > 8){
 //     console.log("Your are not a kid.");
 // }
@@ -119,7 +119,7 @@ var age = 34;
 // });
 
 //While loop
-let j = 0 ;
+// let j = 0 ;
 
 
 // while(j < arr.length){
@@ -263,18 +263,18 @@ let j = 0 ;
 //     return a+b;
 // }
 
-summ = (a,b) => {
-    return a+b;
-}
+// summ = (a,b) => {
+//     return a+b;
+// }
 
-//setTimeout and setinterval
-//SetTimeout Schedule the things to happen in the future
+// //setTimeout and setinterval
+// //SetTimeout Schedule the things to happen in the future
 
-logKaro = () => {
-    document.querySelectorAll('.container')[1].innerHTML = "<b>Set Time Out Fired.</b>"
-    console.log("I am your log. ")
-}
-setTimeout(logKaro, 2000); //2000 mili seconds
+// logKaro = () => {
+//     document.querySelectorAll('.container')[1].innerHTML = "<b>Set Time Out Fired.</b>"
+//     console.log("I am your log. ")
+// }
+// setTimeout(logKaro, 2000); //2000 mili seconds
 
 
 //SetInterval used for things to happened in the repeatation
@@ -286,3 +286,26 @@ setTimeout(logKaro, 2000); //2000 mili seconds
 // clr = setInterval(logKaros,2000);
 
 //We used clearInterval / clearTimeout to cancel the setInterval/setTimeout
+
+//JavaScript Local Storage , help us to save data on client harddisk in the form of strings
+
+
+//What is JSON => JavaScript Object Notattion
+//JSON open stabdard file formar used to 'data exchange'
+// obj = {name: 'Shah', length: 1}
+// obj = {name: 'Shah', length: 1, a: {this: 'tha"t'}}
+// jso = JSON.stringify(obj);
+// console.log(jso)
+// console.log(typeof jso);
+// console.log(typeof(obj));
+
+// parsed = JSON.parse(`{"name":"Shah","length":1,"a":{"this":"tha\\"t"}}`);
+// console.log(parsed);
+
+//JavaScript Versions
+//1.ECMA SCRIPT , use as standardize Script for  JS. Maintain standard of the JS and Updated Version of the JS.
+//ECMA 6 to next version or modern JS versions, including arrow functions,backtiques/trmplate literals introduce and much more.
+
+//Backtiques and Literals
+a = 10;
+console.log(`The number is ${a}`);

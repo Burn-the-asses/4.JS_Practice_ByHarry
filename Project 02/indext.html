@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Project 02/index.js">
+    
     <title>TODOs | List</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -15,7 +15,7 @@
 <body>
     <!-- Navigation -->
     
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">TODOs LIST</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -36,11 +36,11 @@
                             aria-expanded="false">
                             Items
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu " style="color: white; background-color: black;">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li>
-                                <hr class="dropdown-divider">
+                                <hr class="dropdown-divider"> 
                             </li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
@@ -61,6 +61,40 @@
     <main>
         <div class="container my-4">
             <h2 class="text-center">TODOs LIST</h2>
+            <!-- <form> -->
+                <div class="mb-3 form-group">
+                  <label for="title" class="form-label">Title</label>
+                  <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="title or name of todo">
+                  <div id="emailHelp" class="form-text">Add titil in your todo list</div>
+                </div>
+                <div class="mb-3 form-group">
+                  <label for="description" class="form-label">Description</label>
+                  <textarea class="form-control" id="description" rows="3" placeholder="Add Your TODO Description here."></textarea>
+                </div>
+                <button id="add" type="submit" class="btn btn-primary">Add to List</button>
+            <!-- </form> -->
+            <hr>
+            <div class="my-4" id="items">
+              <h2>Your TODO Items</h2>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">SNo</th>
+                    <th scope="col">Item Title</th>
+                    <th scope="col">Item Description</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Get Some Coffee</td>
+                    <td>You need coffee as you are a coder.</td>
+                    <td><button class="btn btn-sm  btn-primary">Delete</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
         </div>
     </main>
 
@@ -68,6 +102,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+        <script src="/Project 02/index.js"></script>
 </body>
 
 </html>

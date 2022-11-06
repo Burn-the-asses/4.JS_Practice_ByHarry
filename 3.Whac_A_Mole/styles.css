@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    background-color: aquamarine;
 }
 .grid{
     width: 606px;
@@ -13,4 +14,7 @@ body{
     width: 200px;
     width: 200px;
     border: 1px solid black;
+}
+.mole{
+    background-color: blue;
 }

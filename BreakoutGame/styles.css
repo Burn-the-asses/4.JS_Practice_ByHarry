@@ -1,0 +1,22 @@
+/* Stylesheet for the stylin of the Breakout Game */
+body{
+    padding: 0;
+    margin: 0;
+}
+.grid{
+    position: absolute;
+    width: 560px;
+    height: 300px;
+    border: 1px solid black;
+    top: 100px;
+    left: 250px;
+    /* margin: 20px 20px; */
+}
+
+.block{
+    position: absolute;
+    width: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: blue;
+}
